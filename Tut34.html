@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 36px 23px;
+            margin: 23px 9px;
+            /*border: 2px solid green;*/
+            background-color: burlywood;
+            /*Box shadow: offset x offset y color*/
+            /*Box shadow: offset x offset y blur-radius color*/
+            /*Box shadow: offset x offset y blur-radius spread-radius color*/
+
+            /*box-shadow: 9px 10px red;*/
+            /*box-shadow: -9px -12px 15px red; */
+            /*box-shadow: 5px 9px 14px red;
+            box-shadow: -5px -9px 14px red;*/
+            /*box-shadow: -5px -9px 14px 23px red;*/
+            /*box-shadow: -5px -9px 14px 23px rgba(6, 53, 124, 0.8);*/
+            box-shadow: inset 4px 7px green;
+
+            box-shadow:  4px 7px green, 4px 7px red;
+
+        }
+        .card h2{
+            /*text-shadow: 3px 5px blue;*/
+            /*text-shadow: 3px 2px 5px white;*/
+            text-shadow: 3px -2px 5px rgb(188, 31, 31);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is a C++ Course</h2>
+            <p>I have started c++ course which does not mean that we will stop this course.We will continue this course to completion. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a repellendus rerum veritatis ex architecto
+                repellat saepe aliquam nesciunt voluptatum. Exercitationem odio maiores, iste asperiores, veritatis
+                incidunt aliquid quas obcaecati quae porro placeat labore vero.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is a html course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a repellendus rerum veritatis ex architecto
+                repellat saepe aliquam nesciunt voluptatum. Exercitationem odio maiores, iste asperiores, veritatis
+                incidunt aliquid quas obcaecati quae porro placeat labore vero.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non a repellendus rerum veritatis ex architecto
+                repellat saepe aliquam nesciunt voluptatum. Exercitationem odio maiores, iste asperiores, veritatis
+                incidunt aliquid quas obcaecati quae porro placeat labore vero.</p>
+        </div>
+    </div>
+</body>
+
+</html>
